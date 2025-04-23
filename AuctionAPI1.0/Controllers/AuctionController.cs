@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using AuctionAPI1._0.Repositories;
 using AuctionAPI1._0.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace AuctionAPI1._0.Controllers
 {
@@ -30,6 +31,7 @@ namespace AuctionAPI1._0.Controllers
             return Ok(auctions);
         }
 
+        [Authorize]
         [HttpPost]
         public async Task<ActionResult> CreateAuction(Auction auction)
         {
@@ -37,6 +39,7 @@ namespace AuctionAPI1._0.Controllers
             return Ok();
         }
 
+        [Authorize]
         [HttpPut]
         public async Task<ActionResult> UpdateAuction(Auction auction)
         {
@@ -44,6 +47,7 @@ namespace AuctionAPI1._0.Controllers
             return NoContent();
         }
 
+        [Authorize]
         [HttpDelete("{id}")]
         public async Task<ActionResult> DeleteAuction(int id)
         {

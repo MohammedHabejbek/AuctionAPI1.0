@@ -7,5 +7,6 @@
         public DateTime BidTime { get; set; }
         public int AuctionId { get; set; }
         public int UserId { get; set; }
+        public decimal Price { get; set; }
     }
 }

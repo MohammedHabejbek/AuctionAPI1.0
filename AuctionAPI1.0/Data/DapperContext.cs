@@ -4,7 +4,7 @@ using System.Data.SqlClient;
 
 namespace AuctionAPI1._0.Data
 {
-    public class DapperContext : IDapperContext
+    public class DapperContext
     {
         private readonly string _connectionString;
 

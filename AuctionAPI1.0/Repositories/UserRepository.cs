@@ -9,9 +9,9 @@ namespace AuctionAPI1._0.Repositories
 {
     public class UserRepository : IUserRepository
     {
-        private readonly IDapperContext _context;
+        private readonly DapperContext _context;
 
-        public UserRepository(IDapperContext context)
+        public UserRepository(DapperContext context)
         {
             _context = context;
         }

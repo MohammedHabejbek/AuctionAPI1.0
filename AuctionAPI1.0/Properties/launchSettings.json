@@ -9,7 +9,7 @@
     }
   },
   "profiles": {
-    "http": {
+    "AuctionAPI1.0": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,
